@@ -1,0 +1,180 @@
+{% extends "layout/layout.twig" %}
+
+{% set title = 'Formularz konsultacji'|trans %}
+
+{% block css %}
+    <style>
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="centered" style="text-align:center;" >
+                    <h5>Proszę poprawnie wypełnić formularz konsultacyjny. Poniższe dane zostaną przekazane administratorowi w celu potwierdzenia konsultacji.</h5>
+                </div>
+            </div>
+
+            <div class="container small-width padding-top">
+                <div class="row">
+                    <h5>Dni konsultacji</h5>
+                    <form method="post" id="check">
+                        <div class="col   ">
+                            <label>
+                                <input type="checkbox" value="0" name="day_0" onclick="return false;"
+                                    {% if '0' in config %}
+                                        checked="checked"
+                                    {% endif %}/>
+                                <span>Poniedziałek</span>
+                            </label>
+                        </div>
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="1" name="day_1" onclick="return false;"
+                                    {% if '1' in config %}
+                                        checked="checked"
+                                    {% endif %}/>
+                                <span>Wtorek</span>
+                            </label>
+                        </div>
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="2" name="day_2" onclick="return false;"
+                                    {% if '2' in config %}
+                                    checked="checked"
+                                    {% endif %}/>
+                                <span>Środa</span>
+                            </label>
+                        </div>
+
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="3" name="day_3" onclick="return false;"
+                                    {% if '3' in config %}
+                                    checked="checked"
+                                    {% endif %}/>
+                                <span>Czwartek</span>
+                            </label>
+                        </div>
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="4" name="day_4" onclick="return false;"
+                                    {% if '4' in config %}
+                                    checked="checked"
+                                    {% endif %}/>
+                                <span>Piątek</span>
+                            </label>
+                        </div>
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="5" name="day_5" onclick="return false;"
+                                    {% if '5' in config %}
+                                    checked="checked"
+                                    {% endif %}/>
+                                <span>Sobota</span>
+                            </label>
+                        </div>
+
+                        <div class="col  ">
+                            <label>
+                                <input type="checkbox" value="6" name="day_6" onclick="return false;"
+                                    {% if '6' in config %}
+                                    checked="checked"
+                                    {% endif %}/>
+                                <span>Niedziela</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container small-width">
+                <div class="row" id="formkon">
+                    <form method="POST">
+                        <div class="center">
+                            <div class="input-field col s12">
+                                <input value="" id="name" type="text" class="validate"  name="applicant">
+                                <label class="active" for="name">Wprowadź swoje imie i nazwisko</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select name="owner">
+                                    <option value="" disabled selected>Prowadzacy</option>
+                                    {% for owner in owners %}
+                                        <option value="{{ owner.id_user }}"> {{ owner.firstname ~ " " ~ owner.surname}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="input-field col s12">
+                                <select name="type">
+                                    <option value="" disabled>Temat konsultacji</option>
+                                    {% for type in types %}
+                                        <option value="{{ type.id_type }}"> {{ type.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col s12">
+                                <input id="datetime" type="date" name="date">
+                                <label class="active datepicker"  for="datetime">Data konsultacji</label>
+                            </div>
+                            <div class="col s12">
+                                <input id="datetime" type="time"  name="time"
+                                       min="7:00" max="20:00" required>
+                                <label class="active"  for="datetime">Godzina rozpoczęcia</label>
+                            </div>
+                            <div class="col s12">
+                                <select name="duration">
+                                    <option value="0" disabled selected>Czas trwania konsultacji</option>
+                                    <option value="10">10 min</option>
+                                    <option value="15">15 min</option>
+                                    <option value="20">20 min</option>
+                                    <option value="25">25 min</option>
+                                    <option value="30">30 min</option>
+                                    <option value="35">35 min</option>
+                                    <option value="40">40 min</option>
+                                    <option value="45">45 min</option>
+                                    <option value="50">50 min</option>
+                                    <option value="55">55 min</option>
+                                    <option value="60">60 min</option>
+                                </select>
+                            </div>
+
+                            <!-- Modal button-->
+                            <div>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Wyślij</a>
+
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Czy na pewno chcesz wysłać prośbę o konsultacje?</h4>
+                                        <p>Po zatwierdzeniu dane zostaną wysłane do administratora w celu umówienia konsultacji</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class=" modal-action modal-close waves-effect waves-green btn-flat">Tak</button>
+                                        <button class=" modal-action modal-close waves-effect waves-green btn-flat">Nie</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {% include 'layout/flash.twig' %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% block js %}
+    <script src="js/datepicker.js"></script>
+    <script src="js/timepicker.js"></script>
+{% endblock %}
+
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends "layout/layout.twig" %}
+
+{% set title = 'Formularz konsultacji'|trans %}
+
+{% block content %}
+
+    <div class="container">
+
+        <div class="container">
+            <div class="centered" style="text-align:center;" >
+
+
+                <h5>Proszę poprawnie wypełnić formularz konsultacyjny. Poniższe dane zostaną przekazane administratorowi w celu potwierdzenia konsultacji.</h5>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div class="centered" id="formkon">
+                <form>
+                    <div class="center">
+                        <div class="input-field col s12">
+                            <input value="" id="name" type="text" class="validate">
+                            <label class="active" for="name">Imię i Nazwisko aplikanta</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input value="" id="namedr" type="text" class="validate">
+                            <label class="active" for="namedr">Imię prowadzącego</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input value="" id="surnamedr" type="text" class="validate">
+                            <label class="active" for="surnamedr">Nazwisko prowadzącego</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Temat konsultacji</option>
+                                <option value="1">PTC</option>
+                                <option value="2">SB</option>
+                                <option value="3">Praktyki</option>
+                            </select>
+                        </div>
+                        <div class="col s12">
+                            <input id="datetime" type="datetime-local" >
+                            <label class="active"  for="datetime">Data i godzina konsultacji</label>
+                        </div>
+                        <div class="col s12">
+                            <input value="" id="time" type="time" class="validate">
+                            <label class="active" for="time">Przybliżony czas trwania konsultacji</label>
+                        </div>
+
+                        <!-- Modal button-->
+                        <div>
+                            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Wyślij</a>
+
+                            <!-- Modal Structure -->
+                            <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                    <h4>Czy na pewno chcesz wysłać prośbę o konsultacje?</h4>
+                                    <p>Po zatwierdzeniu dane zostaną wysłane do administratora w celu umówienia konsultacji</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Tak</a>
+                                    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Nie</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <base href="{{ base_path() }}/"/>
+        <link rel="shortcut icon" href="icons/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="css/helpers.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <title>{% if title is defined %} {{ title }}  {% endif %}</title>
+
+        {% block css %}{% endblock %}
+        <style>
+            body {
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            .padding-top {
+                padding-top: 30px;
+            }
+
+            .small-width{
+                width: 500px !important;
+            }
+
+            .modal{
+                height: 210px !important;
+                width: 500px !important;
+            }
+            .collapsible{
+                margin-right: 300px;
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <!-- Navbar -->
+        {% include 'layout/navbar.twig' %}
+        <!-- Content -->
+        <div class="padding-top">
+            {% block content %}{% endblock %}
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script src="js/select.js"></script>
+        <script src="js/modal.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/modal2.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+        </script>
+        {% block js %}{% endblock %}
+    </body>
+</html>

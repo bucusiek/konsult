@@ -1,0 +1,164 @@
+{% extends "layout/layout.twig" %}
+
+{% set title = 'Panel Administratora'|trans %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="container">
+            <div class="centered" style="text-align:center;">
+
+                <h5>Konsultacje wymagające potwierdzenia</h5>
+                {% include 'layout/flash.twig' %}
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="centered">
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Data i godzina</th>
+                        <th>Przedmiot</th>
+                        <th>Czas trwania</th>
+                        <th>Aplikant</th>
+                        <th>Prowadzący</th>
+                        <th>Akceptacja</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    {% for request in requests %}
+                        {% if request.is_accepted == 0 %}
+                        <tr>
+                            <td>{{ request.date_start }}</td>
+                            <td>{{ request.type.name }}</td>
+                            <td>{{ request.duration }}</td>
+                            <td>{{ request.applicant }}</td>
+                            <td>{{ request.user.firstname ~ ' ' ~ request.user.surname}}</td>
+                            <td>
+                                <a class="waves-effect waves-light btn-small" href="../consultation/approve/{{ request.id }}"><i class="material-icons ">check_circle</i></a>
+                                <a class="waves-effect waves-light btn-small" href="../consultation/edit/{{ request.id }}"><i class="material-icons ">edit</i></a>
+                                <a class="waves-effect waves-light btn-small" href="../consultation/reject/{{ request.id }}"><i class="material-icons ">cancel</i></a>
+                            </td>
+                        </tr>
+                        {% endif %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+
+
+            </div>
+        </div>
+
+        <div class="container padding-top">
+            <div class="centered" style="text-align:center;">
+                <h1></h1>
+
+                <h5>Wybierz dni tygodnia, które odbywają się konsultacje</h5>
+            </div>
+        </div>
+
+
+        <div class="container small-width padding-top">
+            <div class="row">
+                <form method="post" id="check">
+
+                    <div class="col   ">
+                        <label>
+                            <input type="checkbox" value="0" name="day_0"
+                                {% if '0' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Poniedziałek</span>
+                        </label>
+                    </div>
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="1" name="day_1"
+                                {% if '1' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Wtorek</span>
+                        </label>
+                    </div>
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="2" name="day_2"
+                                {% if '2' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Środa</span>
+                        </label>
+                    </div>
+
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="3" name="day_3"
+                                {% if '3' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Czwartek</span>
+                        </label>
+                    </div>
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="4" name="day_4"
+                                {% if '4' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Piątek</span>
+                        </label>
+                    </div>
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="5" name="day_5"
+                                {% if '5' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Sobota</span>
+                        </label>
+                    </div>
+
+                    <div class="col  ">
+                        <label>
+                            <input type="checkbox" value="6" name="day_6"
+                                {% if '6' in config %}
+                                checked="checked"
+                                {% endif %}/>
+                            <span>Niedziela</span>
+                        </label>
+                    </div>
+
+                    <h3></h3>
+
+                    <div class="centered" style="text-align:center ;">
+
+                        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Potwierdź</a>
+
+                        <!-- Modal Structure -->
+
+                        <div id="modal1" class="modal">
+                            <div class="modal-content">
+                                <h4>Czy na pewno chcesz ustawić konsultacje na wybrane dni?</h4>
+                                <p>Po zatwierdzeniu dane zostaną wysłane do systemu </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="modal-close waves-effect waves-green btn-flat">Tak</button>
+                                <button class="modal-close waves-effect waves-green btn-flat">Nie</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+{% endblock %}

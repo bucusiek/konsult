@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03ffe7b0-2307-45c6-ab7a-00f6d426dfea" name="Edit config" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/Action/Consultation/RequestAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/Action/Consultation/RequestAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/src/Action/Consultation/RequestSubmitAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/src/Action/Consultation/RequestSubmitAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ClientApp/templates/consultation/request.twig" beforeDir="false" afterPath="$PROJECT_DIR$/ClientApp/templates/consultation/request.twig" afterDir="false" />
+    </list>
+    <list id="a7b42571-c969-41a7-bdd8-386117490673" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/vendor/cakephp/chronos/" />
+    <ignored path="$PROJECT_DIR$/vendor/catfan/medoo/" />
+    <ignored path="$PROJECT_DIR$/vendor/composer/" />
+    <ignored path="$PROJECT_DIR$/vendor/doctrine/instantiator/" />
+    <ignored path="$PROJECT_DIR$/vendor/fig/http-message-util/" />
+    <ignored path="$PROJECT_DIR$/vendor/jeremeamia/superclosure/" />
+    <ignored path="$PROJECT_DIR$/vendor/lcobucci/jwt/" />
+    <ignored path="$PROJECT_DIR$/vendor/monolog/monolog/" />
+    <ignored path="$PROJECT_DIR$/vendor/myclabs/deep-copy/" />
+    <ignored path="$PROJECT_DIR$/vendor/nikic/fast-route/" />
+    <ignored path="$PROJECT_DIR$/vendor/nikic/php-parser/" />
+    <ignored path="$PROJECT_DIR$/vendor/paragonie/random_compat/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/manifest/" />
+    <ignored path="$PROJECT_DIR$/vendor/phar-io/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/php-di/invoker/" />
+    <ignored path="$PROJECT_DIR$/vendor/php-di/php-di/" />
+    <ignored path="$PROJECT_DIR$/vendor/php-di/phpdoc-reader/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpspec/prophecy/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-code-coverage/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-file-iterator/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-text-template/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-timer/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/php-token-stream/" />
+    <ignored path="$PROJECT_DIR$/vendor/phpunit/phpunit/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/container/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-factory/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-message/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-server-handler/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/http-server-middleware/" />
+    <ignored path="$PROJECT_DIR$/vendor/psr/log/" />
+    <ignored path="$PROJECT_DIR$/vendor/ralouphie/getallheaders/" />
+    <ignored path="$PROJECT_DIR$/vendor/respect/stringifier/" />
+    <ignored path="$PROJECT_DIR$/vendor/respect/validation/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/comparator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/diff/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/environment/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/exporter/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/global-state/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-enumerator/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/object-reflector/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/recursion-context/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/resource-operations/" />
+    <ignored path="$PROJECT_DIR$/vendor/sebastian/version/" />
+    <ignored path="$PROJECT_DIR$/vendor/slim/psr7/" />
+    <ignored path="$PROJECT_DIR$/vendor/slim/slim/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-ctype/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-php56/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-util/" />
+    <ignored path="$PROJECT_DIR$/vendor/symfony/polyfill-uuid/" />
+    <ignored path="$PROJECT_DIR$/vendor/theseer/tokenizer/" />
+    <ignored path="$PROJECT_DIR$/vendor/webmozart/assert/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="ee39cd63-d4da-4a53-a693-b533428f237a" />
+    </execution>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/src/Action/Admin/AdminPanelAction.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/src/Action/Admin/ConfigEditSubmitAction.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2363">
+              <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/Application/Models/ConsultationModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/src/Application/Models/ConfigModel.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/templates/home/home.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/templates/layout/layout.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="646">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/templates/layout/form.twig">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ClientApp/templates/login/login.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ClientApp/config/bootstrap.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ClientApp/templates/layout/layout.twig" />
+        <option value="$PROJECT_DIR$/ClientApp/templates/login/login.twig" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" notify_if_session_was_finished_without_being_paused="false" />
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="0b0191dd-25be-4656-a49a-5f9694bf25f5" name="localhost" port="8080" />
+      <server host="localhost" id="5efccc1b-05c5-4cd7-ba2d-d6a0d93f0162" name="localhost (1)" port="1111" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/ClientApp/public" remote-root="D:/GitHub/konsultacje/Server/public" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/slim/slim" />
+      <path value="$PROJECT_DIR$/vendor/slim/psr7" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/php-di/invoker" />
+      <path value="$PROJECT_DIR$/vendor/php-di/phpdoc-reader" />
+      <path value="$PROJECT_DIR$/vendor/php-di/php-di" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/fig/http-message-util" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/jeremeamia/superclosure" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/catfan/medoo" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/respect/stringifier" />
+      <path value="$PROJECT_DIR$/vendor/respect/validation" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-uuid" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-15" />
+    <option name="width" value="1272" />
+    <option name="height" value="1035" />
+  </component>
+  <component name="ProjectId" id="1ZqseS9qJSygVRER0DQRluuwCCK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="ClientApp" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+              <item name="Config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+              <item name="Consultation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+              <item name="Type" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Actions" type="462c0819:PsiDirectoryNode" />
+              <item name="User" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="konsultacje" type="b2602c69:ProjectViewProjectNode" />
+              <item name="konsultacje" type="462c0819:PsiDirectoryNode" />
+              <item name="Server" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Server/src/Application/Actions/Config" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="tasks.servers" />
+    <property name="ts.external.directory.path" value="D:\GitHub\konsultacje\ClientApp\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GitHub\konsultacje\ClientApp\templates\requests" />
+      <recent name="D:\Biblioteki\Dokumenty\GitHub\konsultacje\ClientApp\public\js" />
+      <recent name="D:\Biblioteki\Dokumenty\GitHub\konsultacje\ClientApp\public\css" />
+      <recent name="D:\Biblioteki\Dokumenty\GitHub\konsultacje\ClientApp\public\assets\home" />
+      <recent name="D:\Biblioteki\Dokumenty\GitHub\konsultacje\src" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\konsultacje\Server\src\Application\Actions\Config" />
+      <recent name="D:\GitHub\konsultacje\ClientApp\templates\consultation\edit" />
+      <recent name="D:\GitHub\konsultacje\ClientApp\templates\home" />
+      <recent name="D:\GitHub\konsultacje\ClientApp\src\Action\Home" />
+      <recent name="D:\GitHub\konsultacje\ClientApp\src\Action\Admin" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task id="Default" summary="Default task">
+      <branch name="master" repository="D:\GitHub\konsultacje" original="true" />
+      <changelist id="a7b42571-c969-41a7-bdd8-386117490673" name="Default Changelist" comment="" />
+      <created>1585578054257</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596743053337</updated>
+      <workItem from="1585578056382" duration="9125000" />
+      <workItem from="1585825337957" duration="5574000" />
+      <workItem from="1588503147467" duration="72000" />
+      <workItem from="1588503333858" duration="7468000" />
+      <workItem from="1588595150329" duration="4219000" />
+      <workItem from="1588686661056" duration="8770000" />
+      <workItem from="1588770327329" duration="8377000" />
+      <workItem from="1588864328357" duration="4167000" />
+      <workItem from="1589290146456" duration="8141000" />
+      <workItem from="1589459131182" duration="4998000" />
+      <workItem from="1589551463608" duration="6722000" />
+      <workItem from="1589985369377" duration="1018000" />
+      <workItem from="1590412738456" duration="672000" />
+      <workItem from="1590508865877" duration="6580000" />
+      <workItem from="1594995102648" duration="4878000" />
+      <workItem from="1595334327220" duration="6603000" />
+      <workItem from="1595423366175" duration="26000" />
+      <workItem from="1595423413202" duration="780000" />
+      <workItem from="1595781594363" duration="10215000" />
+      <workItem from="1595798363256" duration="2722000" />
+      <workItem from="1595801522595" duration="3034000" />
+      <workItem from="1595851305376" duration="2413000" />
+      <workItem from="1595968573021" duration="2889000" />
+      <workItem from="1596469296023" duration="7941000" />
+      <workItem from="1596522837072" duration="6320000" />
+      <workItem from="1596531491261" duration="7943000" />
+      <workItem from="1596558126604" duration="653000" />
+      <workItem from="1596727648762" duration="1263000" />
+    </task>
+    <task id="LOCAL-00002" summary="POST weeklist">
+      <branch name="master" repository="D:\GitHub\konsultacje" />
+      <branch name="master" repository="D:\GitHub\konsultacje" original="true" />
+      <created>1596742978679</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596820928748</updated>
+      <workItem from="1596743054121" duration="5854000" />
+      <workItem from="1596806568318" duration="6229000" />
+    </task>
+    <task active="true" id="LOCAL-00003" summary="Edit config">
+      <branch name="master" repository="D:\GitHub\konsultacje" />
+      <changelist id="03ffe7b0-2307-45c6-ab7a-00f6d426dfea" name="Edit config" comment="" />
+      <created>1596820922153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596820928748</updated>
+      <workItem from="1596820929706" duration="5024000" />
+      <workItem from="1596894143859" duration="3234000" />
+      <workItem from="1597318010053" duration="28000" />
+      <workItem from="1597318183730" duration="897000" />
+      <workItem from="1598250245700" duration="834000" />
+      <workItem from="1604914512554" duration="3809000" />
+      <workItem from="1605426723814" duration="606000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <option name="createBranch" value="false" />
+    <option name="useBranch" value="true" />
+    <servers>
+      <GitHub url="https://github.com">
+        <option name="repoAuthor" value="Talar1997" />
+        <option name="repoName" value="konsultacje" />
+        <option name="shouldFormatCommitMessage" value="true" />
+      </GitHub>
+    </servers>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5249000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2574899" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1073" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1589557381592">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1073" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1589557381592" />
+    <state x="960" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596558076536">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="960" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1588503208522" />
+    <state x="960" y="255" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596558076536" />
+    <state x="898" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1595363641279">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="898" y="241" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1588691137030" />
+    <state x="898" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595363641279" />
+    <state x="1010" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1589465226851">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1010" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1589465226851" />
+    <state x="1010" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1596834089700">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1010" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1589297198043" />
+    <state x="1010" y="274" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596834089700" />
+    <state x="1005" y="394" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1588696823650">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1005" y="394" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1588696823650" />
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.0.bottom/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.0.center" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.0.center/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.0.left" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.0.left/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.0.right" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.0.right/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.1.bottom" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.1.bottom/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.1.center" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.1.center/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.1.left" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.1.left/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.1.right" timestamp="1595793889188">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.1.right/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889188" />
+    <state width="2517" height="297" key="GridCell.Tab.2.bottom" timestamp="1595793889189">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.2.bottom/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889189" />
+    <state width="2517" height="297" key="GridCell.Tab.2.center" timestamp="1595793889189">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.2.center/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889189" />
+    <state width="2517" height="297" key="GridCell.Tab.2.left" timestamp="1595793889189">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.2.left/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889189" />
+    <state width="2517" height="297" key="GridCell.Tab.2.right" timestamp="1595793889189">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="2517" height="297" key="GridCell.Tab.2.right/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1595793889189" />
+    <state x="978" y="242" key="NewPhpClassDialog" timestamp="1589294413173">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="978" y="242" key="NewPhpClassDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1589294413173" />
+    <state x="781" y="164" key="SettingsEditor" timestamp="1596742572133">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="781" y="164" key="SettingsEditor/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1588503381108" />
+    <state x="781" y="164" key="SettingsEditor/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596742572133" />
+    <state x="1035" y="351" key="SimpleOpenTaskDialog" timestamp="1596820928757">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1035" y="351" key="SimpleOpenTaskDialog/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596820928757" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1596904077040">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596904077040" />
+    <state x="1003" y="291" key="refactoring.ChangeSignatureDialog" timestamp="1588688211288">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1003" y="291" key="refactoring.ChangeSignatureDialog/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1588688211288" />
+    <state x="936" y="240" key="run.anything.popup" timestamp="1596744786858">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="936" y="240" key="run.anything.popup/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596744786858" />
+    <state x="1206" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1596904046735">
+      <screen x="0" y="0" width="2560" height="1040" />
+    </state>
+    <state x="1206" y="231" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/258.-1080.1920.1080@0.0.2560.1040" timestamp="1589295563649" />
+    <state x="1206" y="231" width="672" height="678" key="search.everywhere.popup/0.0.2560.1040/326.-1080.1920.1080@0.0.2560.1040" timestamp="1596904046735" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/ClientApp/src/Routing/UrlGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1355">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/Application/Models/UserModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-969">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/src/Action/Admin/AdminPanelAction.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/src/Action/Admin/ConfigEditSubmitAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2363">
+          <caret line="144" column="9" selection-start-line="144" selection-start-column="9" selection-end-line="144" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/Application/Models/ConsultationModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/src/Application/Models/ConfigModel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/templates/home/home.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/templates/layout/layout.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/templates/layout/form.twig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/config/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ClientApp/templates/login/login.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

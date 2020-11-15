@@ -1,0 +1,111 @@
+{% extends "layout/layout.twig" %}
+
+{% set title = 'Formularz konsultacji'|trans %}
+
+{% block css %}
+    <style>
+
+    </style>
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="container">
+                <div class="centered" style="text-align:center;" >
+                    <h5>Proszę poprawnie wypełnić formularz konsultacyjny. Poniższe dane zostaną przekazane administratorowi w celu potwierdzenia konsultacji.</h5>
+                </div>
+            </div>
+
+            <div class="container small-width">
+                <div class="row" id="formkon">
+                    <form method="POST">
+                        <div class="center">
+                            <input type="text" name="id" value="{{ requestData.id }}" hidden />
+                            <div class="input-field col s12">
+                                <input value="{{ requestData.applicant }}" id="name" type="text" class="validate"  name="applicant">
+                                <label class="active" for="name">Wprowadź swoje imie i nazwisko</label>
+                            </div>
+                            <div class="input-field col s12">
+                                <select name="owner">
+                                    <option value="" disabled>Prowadzacy</option>
+                                    {% for owner in owners %}
+                                        <option value="{{ owner.id_user }}"
+                                            {% if owner.id_user == requestData.user.id_user  %}
+                                                selected
+                                            {% endif %}
+                                        > {{ owner.firstname ~ " " ~ owner.surname}}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="input-field col s12">
+                                <select name="type">
+                                    <option value="" disabled>Temat konsultacji</option>
+                                    {% for type in types %}
+                                        <option value="{{ type.id_type }}"
+                                            {% if requestData.type.id_type == type.id_type %}
+                                                selected
+                                            {% endif %}
+                                        > {{ type.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                            <div class="col s12">
+                                <input id="datetime" type="date" name="date" value="{{ requestData.date }}">
+                                <label class="active datepicker"  for="datetime">Data konsultacji</label>
+                            </div>
+                            <div class="col s12">
+                                <input id="datetime" type="time"  name="time"
+                                       min="7:00" max="20:00" required value="{{ requestData.time }}">
+                                <label class="active"  for="datetime">Godzina rozpoczęcia</label>
+                            </div>
+                            <div class="col s12">
+                                <select name="duration">
+                                    <option value="0" disabled selected>Czas trwania konsultacji</option>
+                                    <option value="10" {% if requestData.duration == 10 %} selected {% endif %}>10 min</option>
+                                    <option value="15" {% if requestData.duration == 15 %} selected {% endif %}>15 min</option>
+                                    <option value="20" {% if requestData.duration == 20 %} selected {% endif %}>20 min</option>
+                                    <option value="25" {% if requestData.duration == 25 %} selected {% endif %}>25 min</option>
+                                    <option value="30" {% if requestData.duration == 30 %} selected {% endif %}>30 min</option>
+                                    <option value="35" {% if requestData.duration == 35 %} selected {% endif %}>35 min</option>
+                                    <option value="40" {% if requestData.duration == 40 %} selected {% endif %}>40 min</option>
+                                    <option value="45" {% if requestData.duration == 45 %} selected {% endif %}>45 min</option>
+                                    <option value="50" {% if requestData.duration == 50 %} selected {% endif %}>50 min</option>
+                                    <option value="55" {% if requestData.duration == 55 %} selected {% endif %}>55 min</option>
+                                    <option value="60" {% if requestData.duration == 60 %} selected {% endif %}>60 min</option>
+                                </select>
+                            </div>
+
+                            <!-- Modal button-->
+                            <div>
+                                <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Edytuj</a>
+
+                                <!-- Modal Structure -->
+                                <div id="modal1" class="modal">
+                                    <div class="modal-content">
+                                        <h4>Czy na pewno chcesz edytować konsultację?</h4>
+                                        <p>Po zatwierdzeniu dane muszą zostać ponownie zaakceptowane</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class=" modal-action modal-close waves-effect waves-green btn-flat">Tak</button>
+                                        <button class=" modal-action modal-close waves-effect waves-green btn-flat">Nie</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {% include 'layout/flash.twig' %}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% block js %}
+    <script src="js/datepicker.js"></script>
+    <script src="js/timepicker.js"></script>
+{% endblock %}
+
+{% endblock %}

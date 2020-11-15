@@ -1,0 +1,39 @@
+{% extends "layout/layout.twig" %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}
+
+{% set title = 'Logowanie'|trans %}
+
+{% block content %}
+
+    <div class="container small-width">
+
+        <div class="row">
+            <form class="col s12 form-signin" method="POST">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" name="email" placeholder="{{ 'Email'|trans }}" required autofocus>
+                        <label for="email">Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="{{ 'Hasło'|trans }}" name="password" required>
+                        <label for="password">Hasło</label>
+                    </div>
+                </div>
+
+                <button id="btn_login" class="waves-effect waves-light btn">{{ 'Zaloguj'|trans }}</button>
+                {% include 'layout/flash.twig' %}
+            </form>
+        </div>
+
+    </div>
+
+{% endblock %}

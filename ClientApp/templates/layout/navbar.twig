@@ -1,0 +1,33 @@
+<!-- Fixed navbar -->
+<style>
+    .nav-wrapper  a,
+    .nav-wrapper  a:visited,
+    .nav-wrapper a:hover ,
+    .nav-wrapper  a:active
+    {
+        color: white;
+        text-decoration: none;
+    }
+
+    .brand-logo{
+        margin-left: 10px;
+    }
+
+</style>
+<nav class="teal lighten-2">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Konsultacje</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{{ url_for('request') }}">Poproś o konsultacje</a></li>
+
+            {% if session._sf2_attributes.user is not defined %}
+                <li><a href="{{ url_for('login') }}">Zaloguj</a></li>
+            {% endif %}
+            {% if session._sf2_attributes.user is defined %}
+                <li><a href="{{ url_for('requestList') }}">Panel administracyjny</a></li>
+                <li><a href="{{ url_for('logout') }}">Wyloguj</a></li>
+            {% endif %}
+        </ul>
+    </div>
+
+</nav>

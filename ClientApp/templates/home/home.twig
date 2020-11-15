@@ -1,0 +1,103 @@
+{% extends "layout/layout.twig" %}
+
+{% block css %}
+    <link rel="stylesheet" href="css/style.css">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="container">
+        <div class="centered"  >
+            <h5>Konsultacje w tym miesiącu</h5>
+            {% include 'layout/flash.twig' %}
+
+            <ul class="collapsible" data-collapsible="accordion" >
+                <li>
+                    <div class="collapsible-header " id="hed" >
+                        <i class="material-icons  "></i> Podstawy Techniki Cyfrowej
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Konsultacje: PTC" %}
+                                    <li class = "collection-item">Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header "  >
+                        <i class="material-icons  "> </i> Sieci Bezprzewodowe
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Konsultacje: SB" %}
+                                    <li class = "collection-item"> Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header "  >
+                        <i class="material-icons  "> </i> Architektóra Komputerów
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Konsultacje: AK" %}
+                                    <li class = "collection-item"> Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header "  >
+                        <i class="material-icons  "> </i> Praktyki
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Konsultacje praktyki" %}
+                                    <li class = "collection-item"> Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header "  >
+                        <i class="material-icons  "> </i> Projektowanie Sieci Komputerowych
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Konsultacje: PSK" %}
+                                    <li class = "collection-item"> Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header "  >
+                        <i class="material-icons  "> </i> Inne konsultacje
+                    </div>
+                    <div class="collapsible-body">
+                        {% for cons in consultation %}
+                            <ul class = "collection">{% if cons.type.name == "Inne" %}
+                                    <li class = "collection-item"> Data rozpoczęcia: {{  cons.date_start}}, prowadzący: {{ cons.user.firstname }} {{ cons.user.surname }}, czas trwania: {{ cons.duration}} minut</li>
+                                {% endif %} </ul>
+                        {% endfor %}
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
